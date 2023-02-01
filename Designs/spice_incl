@@ -1,4 +1,4 @@
 name=TT_MODELS1 only_toplevel=false
-.include $::180MCU_MODELS/design.ngspice
-.libs $::180MCU_MODELS/sm141064.ngspice typical
+.include /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.libs /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
 "

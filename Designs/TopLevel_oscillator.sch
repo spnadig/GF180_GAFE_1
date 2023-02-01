@@ -4,8 +4,8 @@ G {}
 K {}
 V {}
 S {name=TT_MODELS1 only_toplevel=false
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.include /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
 
 }
 E {}
@@ -32,7 +32,7 @@ shell display plot_2.svg &
 plot Vin Vout
 .endc"}
 C {devices/code_shown.sym} 330 -110 0 0 {name=TTModel1 only_toplevel=false value="
-.include $::180MCU_MODELS/design.ngspice
-.libs $::180MCU_MODELS/sm141064.ngspice typical
+.include /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.libs /usr/local/google/home/nigelcoburn/MixedSignal/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
 "
 }
