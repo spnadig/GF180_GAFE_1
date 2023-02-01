@@ -3,11 +3,13 @@ v {xschem version=3.1.0 file_version=1.2
 G {}
 K {}
 V {}
-S {name=TT_MODELS1 only_toplevel=false
+C {devices/code_shown.sym} 30 -200 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+"}
 
-}
 E {}
 C {Designs/Buffer.sym} -5 0 0 0 {name=X1}
 C {devices/gnd.sym} 45 -25 0 0 {name=l1 lab=GND}
@@ -29,10 +31,5 @@ hardcopy plot_1.svg v(Vout)
 hardcopy plot_2.svg v(Vin)
 shell display plot_1.svg &
 shell display plot_2.svg &
-plot Vin Vout
+wrdata osc_data Vout Vin
 .endc"}
-C {devices/code_shown.sym} 330 -110 0 0 {name=TTModel1 only_toplevel=false value="
-.include $::180MCU_MODELS/design.ngspice
-.libs $::180MCU_MODELS/sm141064.ngspice typical
-"
-}

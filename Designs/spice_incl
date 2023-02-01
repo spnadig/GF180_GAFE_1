@@ -1,4 +1,0 @@
-name=TT_MODELS1 only_toplevel=false
-.include $::180MCU_MODELS/design.ngspice
-.libs $::180MCU_MODELS/sm141064.ngspice typical
-"
