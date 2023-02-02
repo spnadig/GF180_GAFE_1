@@ -24,8 +24,8 @@ C {devices/iopin.sym} 740 -590 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 740 -440 1 0 {name=p3 lab=VN}
 C {devices/opin.sym} 740 -520 0 0 {name=p4 lab=Y}
 C {symbols/pfet_03v3.sym} 720 -560 0 0 {name=M3
-L=0.28u
-W=0.22u
+L=5u
+W=0.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -38,8 +38,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 720 -470 0 0 {name=M4
-L=0.28u
-W=0.22u
+L=10u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
