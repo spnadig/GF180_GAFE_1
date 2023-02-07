@@ -1,12 +1,12 @@
-* Extracted by KLayout with GF180 LVS runset on : 07/02/2023 03:42
+* Extracted by KLayout with GF180 LVS runset on : 07/02/2023 19:17
 
-.SUBCKT TopLevel_oscillator GND
-X$1 \$4 \$2 \$5 \$1 GND inverter
-X$2 \$5 \$2 \$3 \$1 GND inverter
-X$3 \$3 \$2 \$4 \$1 GND inverter
+.SUBCKT TopLevel_oscillator
+X$1 \$5 \$3 \$1 \$2 inverter
+X$2 \$4 \$5 \$1 \$2 inverter
+X$3 \$3 \$4 \$1 \$2 inverter
 .ENDS TopLevel_oscillator
 
-.SUBCKT inverter A GND Y VP GND$1
-M$1 GND A Y GND$1 nfet_03v3 L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
-M$2 VP A Y VP pfet_03v3 L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.SUBCKT inverter \$1 \$2 \$3 \$4
+M$1 \$3 \$1 \$2 \$3 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+M$2 \$4 \$1 \$2 \$4 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 .ENDS inverter

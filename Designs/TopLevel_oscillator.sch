@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {inverter} 240 -50 0 0 0.2 0.2 {}
+T {inverter} 60 -50 0 0 0.2 0.2 {}
 N 200 -45 225 -45 {
 lab=#net1}
 N 160 -65 265 -65 {
@@ -48,7 +48,7 @@ shell display plot_1.svg &
 shell display plot_2.svg &
 wrdata osc_data Vout Vin
 .endc"}
-C {Designs/inverter.sym} 225 10 0 0 {name=X2}
+C {Designs/inverter.sym} 130 10 0 0 {name=X2}
 C {devices/lab_pin.sym} 5 -45 0 0 {name=p1 sig_type=std_logic lab=A}
-C {Designs/inverter.sym} 130 10 0 0 {name=X1}
-C {Designs/inverter.sym} 50 10 0 0 {name=X3}
+C {Designs/inverter.sym} 50 10 0 0 {name=X1}
+C {Designs/inverter.sym} 225 10 0 0 {name=X3}
