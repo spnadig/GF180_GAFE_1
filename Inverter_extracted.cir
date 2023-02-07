@@ -1,0 +1,8 @@
+* Extracted by KLayout with GF180 LVS runset on : 07/02/2023 03:24
+
+.SUBCKT Inverter IN VDD GND OUT
+M$1 VDD IN OUT VDD pfet_03v3 L=0.28U W=0.22U AS=0.1516P AD=0.1516P PS=1.64U
++ PD=1.64U
+M$2 GND IN OUT nc_1 nfet_03v3 L=0.28U W=0.22U AS=0.1516P AD=0.1516P PS=1.64U
++ PD=1.64U
+.ENDS Inverter

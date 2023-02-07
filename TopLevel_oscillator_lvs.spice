@@ -1,0 +1,25 @@
+** sch_path:
+*+ /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/Designs/TopLevel_oscillator.sch
+.subckt TopLevel_oscillator
+
+X2 VP GND Y net1 inverter
+X1 VP GND net1 net2 inverter
+X3 VP GND net2 Y inverter
+
+
+* expanding   symbol:  Designs/inverter.sym # of pins=4
+** sym_path: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/Designs/inverter.sym
+** sch_path: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/Designs/inverter.sch
+.subckt inverter VP VN Y A
+*.PININFO A:I VP:B GND:B Y:O
+M3 Y A VP VP pfet_03v3 L=5u W=0.5u nf=1 
++ 
++ sa=0 sb=0 sd=0 m=1
+M4 Y A GND GND nfet_03v3 L=5u W=0.5u nf=1 
++ 
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VP
+.end

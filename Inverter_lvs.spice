@@ -1,0 +1,11 @@
+** sch_path: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/Designs/Inverter.sch
+.subckt Inverter A VP VN Y
+*.PININFO A:I VP:B VN:B Y:O
+M3 Y A VP VP pfet_03v3 L=0.28u W=0.22u nf=1 
++ 
++ sa=0 sb=0 sd=0 m=1
+M4 Y A VN VN nfet_03v3 L=0.28u W=0.22u nf=1 
++ 
++ sa=0 sb=0 sd=0 m=1
+.ends
+.end
