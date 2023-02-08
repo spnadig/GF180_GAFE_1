@@ -1,11 +1,6 @@
-** sch_path: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/Designs/Inverter.sch
-.subckt Inverter A VP VN Y
-*.PININFO A:I VP:B VN:B Y:O
-M3 Y A VP VP pfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-+ sa=0 sb=0 sd=0 m=1
-M4 Y A VN VN nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-+ sa=0 sb=0 sd=0 m=1
+* NGSPICE file created from Inverter.ext - technology: gf180mcuC
+
+.subckt Inverter VDD GND IN OUT
+X0 OUT IN GND GND nmos_3p3 w=0.22u l=0.28u
+X1 OUT IN VDD VDD pmos_3p3 w=0.22u l=0.28u
 .ends
-.end

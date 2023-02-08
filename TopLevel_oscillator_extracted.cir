@@ -1,13 +1,15 @@
-* Extracted by KLayout with GF180 LVS runset on : 08/02/2023 01:33
+* Extracted by KLayout with GF180 LVS runset on : 08/02/2023 02:17
 
 .SUBCKT TopLevel_oscillator
-M$1 \$25 \$4 \$2 \$25 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$1 \$28 \$16 \$5 \$28 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$2 \$25 \$2 \$3 \$25 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$2 \$28 \$5 \$6 \$28 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$3 \$25 \$3 \$4 \$25 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$3 \$28 \$6 \$16 \$28 pfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$4 \$1 \$4 \$2 \$1 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
-M$5 \$1 \$2 \$3 \$1 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
-M$6 \$1 \$3 \$4 \$1 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+M$4 \$4 \$16 \$5 \$4 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
++ PD=1.88U
+M$5 \$4 \$5 \$6 \$4 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+M$6 \$4 \$6 \$16 \$4 nfet_03v3_dn L=5U W=0.5U AS=0.22P AD=0.22P PS=1.88U
++ PD=1.88U
 .ENDS TopLevel_oscillator
