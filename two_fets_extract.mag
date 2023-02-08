@@ -1,0 +1,6 @@
+gds read two_fets.gds
+load two_fets
+extract all
+ext2spice scale off
+ext2spice hierarchy on
+ext2spice
