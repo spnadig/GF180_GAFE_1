@@ -1,0 +1,18 @@
+* SPICE3 file created from TopLevel_oscillator.ext - technology: gf180mcuC
+
+.subckt TopLevel_oscillator_extracted VP GND Y
+X0 a_1067_4019# a_n3996_4046# VP VP pfet_03v3 w=0.5u l=5u
+X1 a_1067_4019# a_n3996_4046# GND GND nfet_03v3 w=0.5u l=5u
+X2 a_n3996_4046# Y GND GND nfet_03v3 w=0.5u l=5u
+X3 Y a_1067_4019# VP VP pfet_03v3 w=0.5u l=5u
+X4 Y a_1067_4019# GND GND nfet_03v3 w=0.5u l=5u
+X5 a_n3996_4046# Y VP VP pfet_03v3 w=0.5u l=5u
+C0 Y a_1067_4019# 0.29fF
+C1 VP a_n3996_4046# 0.55fF
+C2 Y a_n3996_4046# 0.28fF
+C3 VP Y 0.93fF
+C4 a_1067_4019# a_n3996_4046# 0.29fF
+C5 VP a_1067_4019# 0.39fF
+.ends
+
+

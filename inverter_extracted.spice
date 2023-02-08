@@ -1,0 +1,6 @@
+* NGSPICE file created from Inverter.ext - technology: gf180mcuC
+
+.subckt inverter_extracted VDD GND OUT IN
+X0 OUT IN GND GND nfet_03v3 w=0.22u l=.28u
+X1 OUT IN VDD VDD pfet_03v3 w=0.22u l=0.28u
+.ends
