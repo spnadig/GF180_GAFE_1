@@ -11,7 +11,7 @@ N 740 -470 740 -440 {
 lab=VN}
 N 670 -560 700 -560 {
 lab=A}
-N 670 -520 670 -470 {
+N 670 -560 670 -470 {
 lab=A}
 N 670 -470 700 -470 {
 lab=A}
@@ -19,8 +19,6 @@ N 640 -520 670 -520 {
 lab=A}
 N 740 -530 740 -500 {
 lab=Y}
-N 670 -560 670 -520 {
-lab=A}
 C {devices/ipin.sym} 640 -520 0 0 {name=p1 lab=A}
 C {devices/iopin.sym} 740 -590 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 740 -440 1 0 {name=p3 lab=VN}
