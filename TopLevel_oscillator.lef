@@ -1,0 +1,47 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO TopLevel_oscillator
+  CLASS BLOCK ;
+  FOREIGN TopLevel_oscillator ;
+  ORIGIN 37.570 -18.005 ;
+  SIZE 77.620 BY 26.425 ;
+  PIN VP
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT -26.220 34.620 25.115 35.320 ;
+    END
+  END VP
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT -26.200 18.030 25.075 18.670 ;
+    END
+  END GND
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 30.775 20.380 40.025 32.040 ;
+    END
+  END Y
+  OBS
+      LAYER Metal1 ;
+        RECT -37.570 35.620 40.050 44.430 ;
+        RECT -37.570 34.320 -26.520 35.620 ;
+        RECT 25.415 34.320 40.050 35.620 ;
+        RECT -37.570 32.340 40.050 34.320 ;
+        RECT -37.570 20.080 30.475 32.340 ;
+        RECT -37.570 18.970 40.050 20.080 ;
+        RECT -37.570 18.005 -26.500 18.970 ;
+        RECT 25.375 18.005 40.050 18.970 ;
+  END
+END TopLevel_oscillator
+END LIBRARY
+
