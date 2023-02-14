@@ -1,0 +1,175 @@
+timestamp 1504917900
+version 8.3
+tech gf180mcuC
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use gf180mcu_fd_sc_mcu7t5v0__dlyb_1 input1 -1 0 36512 0 1 36064
+use gf180mcu_fd_sc_mcu7t5v0__and2_1 _0_ -1 0 19488 0 1 18816
+use TopLevel_oscillator osc0 1 0 17514 0 1 6399
+port "osc_out" 1 0 0 112 800 m2
+port "VSS" 2 4648 13328 4648 13328 m4
+port "VSS" 2 38480 3076 38800 36908 m4
+port "VSS" 2 29156 3076 29476 36908 m4
+port "VSS" 2 19832 3076 20152 36908 m4
+port "VSS" 2 10508 3076 10828 36908 m4
+port "VSS" 2 4488 7780 4808 18876 m4
+port "osc_en" 3 39648 39200 39760 40000 m2
+port "VDD" 0 33818 3076 34138 36908 m4
+port "VDD" 0 24494 3076 24814 36908 m4
+port "VDD" 0 15170 3076 15490 36908 m4
+port "VDD" 0 5846 3076 6166 36908 m4
+node "osc_out" 60 -7471.56 0 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3952 256 1115856 38588 1051680 37672 0 0 0 0
+node "osc_sig" 21 2062.8 19070 19170 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11856 768 447104 16304 255696 9244 0 0 0 0
+node "VSS" 0 189080 4488 7780 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84656640 1417664 1599936 54960 1275456 54960 46855680 296048 0 0
+node "net1" 55 -5865.33 19294 19282 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11856 768 1008448 36240 876064 31400 0 0 0 0
+node "osc_en" 12 1086.16 39648 39200 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7904 512 261744 8196 198688 7208 0 0 0 0
+node "VDD" 0 195354 5846 3076 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84349440 1412544 1524864 51680 1208704 51680 43304960 273216 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "net1" "osc_en" 3.17536
+cap "VSS" "VDD" 61390.4
+cap "net1" "osc_sig" 35.0445
+cap "VSS" "osc_en" 132.169
+cap "VSS" "osc_sig" 342.221
+cap "osc_out" "VDD" 1554.81
+cap "net1" "VSS" 2808.61
+cap "osc_sig" "osc_out" 13.5989
+cap "osc_en" "VDD" 58.3753
+cap "osc_sig" "VDD" 200.738
+cap "VSS" "osc_out" 3564.16
+cap "net1" "VDD" 1973.96
+cap "VSS" "osc0/GND" 0.946213
+cap "VDD" "osc0/GND" 15.621
+cap "VDD" "osc0/a_n3996_4046#" 87.9912
+cap "VDD" "osc0/GND" 10.1497
+cap "VSS" "osc0/a_1067_4019#" 125.507
+cap "VSS" "osc0/GND" 25.7707
+cap "osc0/a_n3996_4046#" "VSS" 2.06399
+cap "VSS" "osc0/a_n3996_4046#" 0.137848
+cap "osc0/a_1067_4019#" "VDD" 7.42837
+cap "osc_sig" "VDD" 134.498
+cap "VSS" "osc0/Y" 37.1997
+cap "VDD" "osc0/a_n3996_4046#" 166.535
+cap "VDD" "osc0/a_n3996_4046#" 22.8044
+cap "osc0/a_1067_4019#" "VSS" 232.487
+cap "osc0/a_n3996_4046#" "VSS" 0.131928
+cap "osc0/a_n3996_4046#" "VSS" 3.18001
+cap "osc0/a_1067_4019#" "osc_sig" 118.116
+cap "osc_sig" "osc0/VP" 0.170664
+cap "osc0/a_1067_4019#" "VDD" 12.7866
+cap "osc_sig" "VDD" 235.333
+cap "VSS" "osc0/VP" 1.40228
+cap "VSS" "osc0/Y" 32.3359
+cap "VDD" "osc0/a_n3996_4046#" 59.5537
+cap "VDD" "osc0/VP" 17.0855
+cap "VDD" "osc0/VP" 11.1013
+cap "osc0/VP" "VSS" 28.1867
+cap "osc0/a_1067_4019#" "VSS" 77.6853
+cap "osc0/VP" "VSS" 0.307406
+cap "osc0/a_n3996_4046#" "VSS" 1.15326
+cap "osc_sig" "osc0/a_1067_4019#" 26.6574
+cap "osc_sig" "osc0/VP" 9.67012
+cap "VDD" "osc0/VP" 0.5886
+cap "VDD" "osc0/a_1067_4019#" 3.07478
+cap "VDD" "osc_sig" 98.926
+cap "osc0/Y" "VSS" 216.638
+cap "osc0/Y" "VDD" 151.084
+cap "VDD" "osc0/Y" 98.1669
+cap "osc0/Y" "VSS" 249.251
+cap "osc_sig" "osc0/Y" 574.476
+cap "osc0/Y" "VDD" 225.607
+cap "_0_/VDD" "VSS" -30.2036
+cap "_0_/VNW" "_0_/A2" 6.53181
+cap "_0_/a_244_159#" "_0_/A2" 0.806122
+cap "net1" "_0_/VNW" 16.6995
+cap "_0_/Z" "_0_/VNW" 3.10441
+cap "net1" "_0_/A2" 15.4289
+cap "_0_/VNW" "_0_/a_36_159#" 2.94901
+cap "_0_/Z" "_0_/a_244_159#" 0.22308
+cap "_0_/Z" "_0_/A2" 3.75593
+cap "_0_/a_36_159#" "_0_/A2" 34.9859
+cap "VSS" "_0_/VNW" 6.42623
+cap "_0_/Z" "net1" 1.9713
+cap "net1" "_0_/a_36_159#" 16.749
+cap "VSS" "_0_/A2" -6.19772
+cap "_0_/Z" "_0_/a_36_159#" 0.503325
+cap "VSS" "net1" -5.38123
+cap "_0_/VDD" "_0_/VNW" 20.8189
+cap "VSS" "_0_/Z" -25.7196
+cap "_0_/VDD" "_0_/A2" -6.86701
+cap "_0_/VDD" "net1" -3.0881
+cap "_0_/VDD" "_0_/Z" -4.33362
+cap "_0_/Z" "VSS" 1.00831
+cap "_0_/a_244_159#" "_0_/A2" 0.0183542
+cap "_0_/a_244_159#" "VSS" 0.022055
+cap "VSS" "_0_/VDD" 1.06179
+cap "_0_/A2" "VSS" 1.41719
+cap "net1" "_0_/A2" 0.181219
+cap "net1" "VSS" 1.14177
+cap "_0_/a_36_159#" "_0_/A2" 0.523946
+cap "_0_/a_36_159#" "VSS" 3.07374
+cap "_0_/VNW" "VSS" 3.30672
+cap "_0_/Z" "_0_/A2" -0.439985
+cap "_0_/VNW" "net1" 0.809455
+cap "VSS" "_0_/VNW" 1.43973
+cap "_0_/VDD" "_0_/VNW" 6.20273
+cap "net1" "_0_/VNW" 2.35282
+cap "VSS" "_0_/VNW" 0.497492
+cap "input1/Z" "input1/VDD" 0.535588
+cap "input1/Z" "input1/VSS" -2.94842
+cap "input1/VNW" "input1/VSS" 3.45858
+cap "input1/a_1147_68#" "input1/VDD" 0.0515808
+cap "input1/VDD" "input1/a_671_644#" 0.832257
+cap "input1/VDD" "input1/a_895_68#" 1.69353
+cap "input1/VSS" "input1/VDD" -3.86308
+cap "input1/a_47_68#" "input1/I" 1.91553
+cap "input1/a_895_68#" "input1/I" 0.609407
+cap "input1/I" "input1/a_671_644#" 1.12812
+cap "input1/VDD" "input1/VSS" -27.9256
+cap "input1/Z" "input1/I" 0.0486938
+cap "input1/VDD" "input1/I" -2.54636
+cap "input1/I" "input1/VSS" -11.7719
+cap "input1/VNW" "input1/VSS" 5.42777
+cap "input1/a_47_68#" "input1/VSS" 2.05353
+cap "input1/VSS" "input1/VDD" -2.36229
+cap "input1/a_47_68#" "input1/I" 0.212633
+cap "input1/a_671_644#" "input1/VDD" 1.30243
+cap "input1/a_895_68#" "input1/Z" 4.91208
+cap "input1/a_1127_622#" "input1/VDD" 0.0714925
+cap "input1/VNW" "input1/VDD" 16.2887
+cap "input1/VDD" "input1/VSS" -4.30274
+cap "input1/Z" "input1/VDD" -10.6938
+cap "input1/a_671_644#" "input1/Z" 1.00668
+cap "input1/Z" "input1/a_47_68#" 0.578558
+cap "input1/Z" "input1/VNW" 14.4838
+cap "input1/Z" "input1/VSS" -2.54636
+cap "input1/a_895_68#" "input1/VDD" 1.24766
+cap "input1/a_47_68#" "input1/I" 28.6348
+cap "input1/a_671_644#" "input1/I" 2.59058
+cap "input1/I" "input1/VSS" 0.0344404
+cap "input1/I" "input1/VDD" -2.38541
+cap "input1/a_895_68#" "input1/Z" -0.526291
+cap "input1/VDD" "input1/VSS" -27.9256
+cap "input1/a_895_68#" "input1/I" 1.13571
+cap "input1/VNW" "input1/I" 10.1434
+cap "input1/I" "input1/Z" 0.399893
+cap "input1/I" "input1/VNW" 4.93778
+cap "input1/a_47_68#" "input1/VNW" 2.22597
+cap "input1/VDD" "input1/VNW" 25.8085
+cap "input1/a_47_68#" "input1/I" 8.24861
+cap "input1/VDD" "input1/VSS" -2.36229
+cap "input1/a_47_68#" "input1/VDD" 2.6579
+cap "input1/I" "input1/a_671_644#" 0.010269
+merge "input1/VPW" "_0_/VPW" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "_0_/VPW" "osc0/GND"
+merge "osc0/GND" "VSUBS"
+merge "_0_/Z" "osc_out" 216.952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3952 -256 0 0 -253120 -9152 0 0 0 0
+merge "_0_/A2" "osc0/Y" -1613.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7904 -512 -281232 -10100 -146944 -5304 0 0 0 0
+merge "osc0/Y" "osc_sig"
+merge "input1/VSS" "_0_/VSS" -8439.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3307200 -56560 -93024 -3056 -73024 -3056 -2027200 -11200 0 0
+merge "_0_/VSS" "VSS"
+merge "input1/Z" "_0_/A1" -165.593 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7904 -512 -16072 -630 0 0 0 0 0 0
+merge "_0_/A1" "net1"
+merge "input1/VDD" "_0_/VDD" -11470.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3664220 -64605 -120384 -4080 -95424 -4080 -4032000 -25200 0 0
+merge "_0_/VDD" "VDD"
+merge "input1/I" "osc_en" -555.417 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3952 -256 -168000 -4624 0 0 0 0 0 0
