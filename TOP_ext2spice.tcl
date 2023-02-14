@@ -19,6 +19,8 @@ port osc_en use signal
 port osc_en index 3
 
 extract all
+ext2spice rthresh 0
+ext2spice cthresh 3f
 ext2spice scale off
 ext2spice hierarchy on
 ext2spice
