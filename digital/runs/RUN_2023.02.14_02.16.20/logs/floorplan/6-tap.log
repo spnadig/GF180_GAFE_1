@@ -1,8 +1,0 @@
-OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
-This program is licensed under the BSD-3 license. See the LICENSE file for details.
-Components of this program may be licensed under more restrictive licenses which must be honored.
-[INFO ODB-0303] The initial 43 rows (14319 sites) were cut with 1 shapes for a total of 56 rows (12044 sites).
-[INFO TAP-0004] Inserted 112 endcaps.
-[INFO TAP-0005] Inserted 173 tapcells.
-Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/floorplan/top.odb...
-Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/floorplan/top.def...
