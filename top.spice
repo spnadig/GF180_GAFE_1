@@ -1,0 +1,58 @@
+* SPICE3 file created from top.ext - technology: gf180mcuC
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__dlyb_1 VDD I VSS Z VNW VPW
+X0 VSS a_671_644# a_1147_68# VPW nfet_06v0 ad=0.75245p pd=5.5u as=0.0876p ps=1.21u w=0.365u l=0.6u
+X1 a_671_644# a_47_68# a_503_644# VNW pfet_06v0 ad=0.3852p pd=2.86u as=0.1224p ps=1.4u w=0.36u l=0.5u
+X2 VSS I a_47_68# VPW nfet_06v0 ad=0p pd=0u as=0.333p ps=2.57u w=0.36u l=0.6u
+X3 Z a_895_68# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.9812p ps=6.7u w=1.22u l=0.5u
+X4 a_523_68# a_47_68# VSS VPW nfet_06v0 ad=0.0864p pd=1.2u as=0p ps=0u w=0.36u l=0.6u
+X5 a_671_644# a_47_68# a_523_68# VPW nfet_06v0 ad=0.369p pd=2.77u as=0p ps=0u w=0.36u l=0.6u
+X6 a_503_644# a_47_68# VDD VNW pfet_06v0 ad=0p pd=0u as=0p ps=0u w=0.36u l=0.5u
+X7 VDD a_671_644# a_1127_622# VNW pfet_06v0 ad=0p pd=0u as=0.1224p ps=1.4u w=0.36u l=0.5u
+X8 VDD I a_47_68# VNW pfet_06v0 ad=0p pd=0u as=0.3852p ps=2.86u w=0.36u l=0.5u
+X9 Z a_895_68# VSS VPW nfet_06v0 ad=0.3608p pd=2.52u as=0p ps=0u w=0.82u l=0.6u
+X10 a_1147_68# a_671_644# a_895_68# VPW nfet_06v0 ad=0p pd=0u as=0.3705p ps=2.77u w=0.365u l=0.6u
+X11 a_1127_622# a_671_644# a_895_68# VNW pfet_06v0 ad=0p pd=0u as=0.3456p ps=2.64u w=0.36u l=0.5u
+C0 VNW VPW 3.05fF
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__and2_1 VDD VSS Z A1 A2 VNW VPW
+X0 a_244_159# A1 a_36_159# VPW nfet_06v0 ad=0.1168p pd=1.37u as=0.1606p ps=1.61u w=0.365u l=0.6u
+X1 a_36_159# A1 VDD VNW pfet_06v0 ad=0.312p pd=2.24u as=1.0755p ps=6.19u w=0.6u l=0.5u
+X2 VDD A2 a_36_159# VNW pfet_06v0 ad=0p pd=0u as=0p ps=0u w=0.6u l=0.5u
+X3 Z a_36_159# VDD VNW pfet_06v0 ad=0.5346p pd=3.31u as=0p ps=0u w=1.215u l=0.5u
+X4 Z a_36_159# VSS VPW nfet_06v0 ad=0.3586p pd=2.51u as=0.4681p ps=3.11u w=0.815u l=0.6u
+X5 VSS A2 a_244_159# VPW nfet_06v0 ad=0p pd=0u as=0p ps=0u w=0.365u l=0.6u
+.ends
+
+.subckt TopLevel_oscillator Y VP GND
+X0 a_1067_4019# a_n3996_4046# VP VP pfet_03v3 ad=0.22p pd=1.88u as=0.66p ps=5.64u w=0.5u l=5u
+X1 a_1067_4019# a_n3996_4046# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.66p ps=5.64u w=0.5u l=5u
+X2 a_n3996_4046# Y GND GND nfet_03v3 ad=0.22p pd=1.88u as=0p ps=0u w=0.5u l=5u
+X3 Y a_1067_4019# VP VP pfet_03v3 ad=0.22p pd=1.88u as=0p ps=0u w=0.5u l=5u
+X4 Y a_1067_4019# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0p ps=0u w=0.5u l=5u
+X5 a_n3996_4046# Y VP VP pfet_03v3 ad=0.22p pd=1.88u as=0p ps=0u w=0.5u l=5u
+C0 Y GND 30.75fF
+C1 VP GND 5.07fF
+C2 a_1067_4019# GND 11.97fF
+C3 a_n3996_4046# GND 12.06fF
+.ends
+
+.subckt top VDD osc_out VSS osc_en
+Xinput1 VDD osc_en VSS net1 input1/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X_0_ VDD VSS osc_out net1 osc_sig _0_/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__and2_1
+Xosc0 osc_sig osc0/VP VSUBS TopLevel_oscillator
+C0 VSS osc_out 3.54fF
+C1 VSS net1 2.80fF
+C2 VSS VDD 61.29fF
+C3 osc_sig VSUBS 31.36fF
+C4 osc0/VP VSUBS 5.07fF
+C5 osc0/a_1067_4019# VSUBS 11.97fF **FLOATING
+C6 osc0/a_n3996_4046# VSUBS 12.06fF **FLOATING
+C7 VSS VSUBS 180.55fF
+C8 osc_out VSUBS -7.21fF
+C9 VDD VSUBS 183.19fF
+C10 net1 VSUBS -5.86fF
+C11 input1/VNW VSUBS 3.05fF
+.ends
+
