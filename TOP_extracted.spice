@@ -1,0 +1,39 @@
+** sch_path: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/TOP_extracted.sch
+**.subckt TOP_extracted
+VP VP GND 1.8
+.save i(vp)
+V1 EN GND PULSE ( 0 1 2NS 2NS 2NS 1uS 2uS 2)
+.save i(v1)
+X1 VP Z GND EN top
+**** begin user architecture code
+
+.include /usr/local/google/home/sachinnadig/MixedSignal_ENV/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /usr/local/google/home/sachinnadig/MixedSignal_ENV/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+
+
+.include /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/top.spice
+.tran 0.005u 8u
+.save all
+.control
+run
+
+wrdata osc_out_extracted EN Z
+write TOP_extracted.raw
+
+linearize V(x1.osc_sig)
+set specwindow = blackman
+fft V(x1.osc_sig)
+
+set hcopydevtype = svg
+hardcopy plot_0.svg mag((x1.osc_sig))
+shell display plot_0.svg &
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VP
+.GLOBAL GND
+.end
