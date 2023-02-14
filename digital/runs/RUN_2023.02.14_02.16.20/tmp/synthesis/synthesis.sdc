@@ -1,0 +1,2 @@
+set_driving_cell gf180mcu_fd_sc_mcu7t5v0__inv_1
+set_load 72.91

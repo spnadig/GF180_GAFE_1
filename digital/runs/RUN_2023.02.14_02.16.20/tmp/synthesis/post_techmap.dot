@@ -1,0 +1,14 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="osc_en", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="osc_out", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="osc_sig", color="black", fontcolor="black" ];
+c7 [ shape=record, label="{{<p4> A|<p5> B}|$81\n$_AND_|{<p6> Y}}" ];
+c8 [ shape=record, label="{{}|osc0\nTopLevel_oscillator|{<p6> Y}}" ];
+n1:e -> c7:p4:w [color="black", label=""];
+c7:p6:e -> n2:w [color="black", label=""];
+c8:p6:e -> n3:w [color="black", label=""];
+n3:e -> c7:p5:w [color="black", label=""];
+}

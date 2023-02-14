@@ -1,0 +1,21 @@
+OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             455.5 u
+legalized HPWL            465.0 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 2 instances
+[INFO DPL-0021] HPWL before             465.0 u
+[INFO DPL-0022] HPWL after              455.5 u
+[INFO DPL-0023] HPWL delta               -2.1 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/placement/top.odb...
+Writing netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/placement/top.nl.v...
+Writing powered netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/placement/top.pnl.v...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/placement/top.def...

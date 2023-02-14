@@ -1,0 +1,126 @@
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 52.225 ) - ( 62.160, 52.360 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 52.360 ) - ( 62.160, 52.590 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 52.590 ) - ( 62.160, 52.725 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 52.590 ) - ( 61.830, 52.725 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 52.360 ) - ( 61.830, 52.590 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 52.225 ) - ( 61.830, 52.360 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 52.090 ) - ( 87.475, 52.225 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 52.225 ) - ( 87.475, 52.455 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 52.455 ) - ( 87.475, 52.590 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 52.455 ) - ( 87.145, 52.590 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 52.225 ) - ( 87.145, 52.455 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 52.090 ) - ( 87.145, 52.225 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 52.010 ) - ( 112.845, 52.145 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 52.145 ) - ( 112.845, 52.375 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 52.375 ) - ( 112.845, 52.510 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 52.375 ) - ( 112.515, 52.510 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 52.145 ) - ( 112.515, 52.375 ) on Layer PP
+  violation type: N_Diffusion_to_P_tap_spacing_lt_0dot33um_across_butted_junction_PPdot4b_plus_NPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 52.010 ) - ( 112.515, 52.145 ) on Layer PP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 64.115 ) - ( 62.160, 64.250 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 64.250 ) - ( 62.160, 64.480 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 62.150, 64.480 ) - ( 62.160, 64.615 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 64.480 ) - ( 61.830, 64.615 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 64.250 ) - ( 61.830, 64.480 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 61.820, 64.115 ) - ( 61.830, 64.250 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 63.980 ) - ( 87.475, 64.115 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 64.115 ) - ( 87.475, 64.345 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.465, 64.345 ) - ( 87.475, 64.480 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 64.345 ) - ( 87.145, 64.480 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 64.115 ) - ( 87.145, 64.345 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 87.135, 63.980 ) - ( 87.145, 64.115 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 63.900 ) - ( 112.845, 64.035 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 64.035 ) - ( 112.845, 64.265 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.835, 64.265 ) - ( 112.845, 64.400 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 64.265 ) - ( 112.515, 64.400 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 64.035 ) - ( 112.515, 64.265 ) on Layer NP
+  violation type: P_Diffusion_to_N_tap_spacing_lt_0dot33um_across_butted_junction_NPdot4b_plus_PPdot4c
+    srcs: N/A N/A
+    bbox = ( 112.505, 63.900 ) - ( 112.515, 64.035 ) on Layer NP
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 61.910, 64.625 ) - ( 62.000, 64.855 ) on Layer M1
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 62.140, 64.615 ) - ( 62.230, 64.625 ) on Layer M1
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 87.225, 64.490 ) - ( 87.315, 64.720 ) on Layer M1
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 87.455, 64.480 ) - ( 87.545, 64.490 ) on Layer M1
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 112.595, 64.410 ) - ( 112.685, 64.640 ) on Layer M1
+  violation type: Metal1_spacing_lt_0dot23um_M1dot2a
+    srcs: N/A N/A
+    bbox = ( 112.825, 64.400 ) - ( 112.915, 64.410 ) on Layer M1

@@ -1,0 +1,27 @@
+OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 60 technology vias
+[INFO ODB-0225]     Created 230 library cells
+[INFO ODB-0226] Finished LEF file:  /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/merged.nom.lef
+Reading netlist...
+[WARNING ORD-1011] LEF master TopLevel_oscillator has no liberty cell.
+[INFO]: Setting output delay to: 2.0
+[INFO]: Setting input delay to: 2.0
+[WARNING STA-0337] port '__VIRTUAL_CLK__' not found.
+[INFO]: Setting load to: 0.07291
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[WARNING STA-0559] transition time can not be specified for virtual clocks.
+[INFO]: Setting timing derate to: 0.5 %
+[INFO IFP-0001] Added 43 rows of 333 sites.
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tiel/ZN.
+[INFO IFP-0030] Inserted 0 tiecells using gf180mcu_fd_sc_mcu7t5v0__tieh/Z.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 200.0 200.0 (microns). Saving to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/reports/floorplan/3-initial_fp_die_area.rpt.
+[INFO] Floorplanned on a core area of 6.72 15.68 193.2 184.24 (microns). Saving to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/reports/floorplan/3-initial_fp_core_area.rpt.
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/floorplan/3-initial_fp.odb...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/floorplan/3-initial_fp.def...
+Writing timing constraints to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/floorplan/3-initial_fp.sdc...
