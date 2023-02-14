@@ -1,0 +1,44 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "top")
+ (DATE "Tue Feb 14 02:16:51 2023")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.3.3")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "top")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT osc_en input1.I (0.075:0.075:0.075) (0.047:0.047:0.047))
+    (INTERCONNECT osc_en ANTENNA_input1_I.I (0.075:0.075:0.075) (0.047:0.047:0.047))
+    (INTERCONNECT _0_.Z osc_out (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT osc0.Y _0_.A2 (0.000:0.000:0.000))
+    (INTERCONNECT osc0.Y ANTENNA__0__A2.I (0.000:0.000:0.000))
+    (INTERCONNECT input1.Z _0_.A1 (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input1.Z ANTENNA__0__A1.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__and2_1")
+  (INSTANCE _0_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 Z (1.087:1.087:1.087) (0.810:0.810:0.810))
+    (IOPATH A2 Z (1.046:1.046:1.046) (0.742:0.742:0.742))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input1)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.344:0.344:0.344) (0.331:0.331:0.331))
+   )
+  )
+ )
+)

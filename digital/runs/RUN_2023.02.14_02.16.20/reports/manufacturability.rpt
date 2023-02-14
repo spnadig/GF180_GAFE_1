@@ -1,0 +1,19 @@
+Design Name: top
+Run Directory: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20
+----------------------------------------
+
+Magic DRC Summary:
+Source: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/reports/signoff/drc.rpt
+Violation Message "N-Diffusion to P-tap spacing < 0.33um across butted junction (PP.4b + NP.4c) "found 18 Times.
+Violation Message "P-Diffusion to N-tap spacing < 0.33um across butted junction (NP.4b + PP.4c) "found 18 Times.
+Violation Message "Metal1 spacing < 0.23um (M1.2a) "found 6 Times.
+Total Magic DRC violations is 42
+----------------------------------------
+
+LVS Summary:
+Source: /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/logs/signoff/top.lvs.lef.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.

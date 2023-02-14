@@ -1,0 +1,73 @@
+library (top) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1ohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 30;
+  slew_lower_threshold_pct_fall : 30;
+  slew_upper_threshold_pct_rise : 70;
+  slew_upper_threshold_pct_fall : 70;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 125.0;
+  nom_voltage                    : 4.50;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00264,  0.00837,  0.01933,  0.03640,  0.06036,  0.09188,  0.13160,  0.18010,  0.23780");
+  }
+  lu_table_template(template_2) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00264,  0.00837,  0.01933,  0.03640,  0.06036,  0.09188,  0.13160,  0.18010,  0.23780");
+  }
+
+  cell ("top") {
+    pin("osc_en") {
+      direction : input;
+      capacitance : 0.0079;
+    }
+    pin("osc_out") {
+      direction : output;
+      capacitance : 0.0152;
+      timing() {
+        related_pin : "osc_en";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("1.38907,1.40780,1.46633,1.56992,1.72824,1.95074,2.24418,2.61510,3.06718,3.60710");
+	}
+	rise_transition(template_1) {
+          values("0.09849,0.12322,0.21173,0.38238,0.65999,1.05600,1.57808,2.23800,3.04108,4.00100");
+	}
+	cell_fall(template_2) {
+          values("1.26334,1.27924,1.32555,1.39985,1.50465,1.64695,1.83325,2.06844,2.35544,2.69744");
+	}
+	fall_transition(template_2) {
+          values("0.08219,0.09903,0.15151,0.24811,0.40350,0.63210,0.94050,1.33100,1.80900,2.37900");
+	}
+      }
+    }
+    pin("VDD") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("VSS") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+  }
+
+}

@@ -1,0 +1,82 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO top
+  CLASS BLOCK ;
+  FOREIGN top ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 200.000 BY 200.000 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 29.230 15.380 30.830 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 75.850 15.380 77.450 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 122.470 15.380 124.070 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 169.090 15.380 170.690 184.540 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 52.540 15.380 54.140 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 99.160 15.380 100.760 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 145.780 15.380 147.380 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 192.400 15.380 194.000 184.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 22.440 38.900 24.040 94.380 ;
+    END
+  END VSS
+  PIN osc_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 198.240 196.000 198.800 200.000 ;
+    END
+  END osc_en
+  PIN osc_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.000 0.000 0.560 4.000 ;
+    END
+  END osc_out
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 194.000 184.540 ;
+      LAYER Metal2 ;
+        RECT 0.140 195.700 197.940 196.000 ;
+        RECT 0.140 4.300 198.660 195.700 ;
+        RECT 0.860 4.000 198.660 4.300 ;
+      LAYER Metal3 ;
+        RECT 0.090 15.540 198.710 184.380 ;
+  END
+END top
+END LIBRARY
+

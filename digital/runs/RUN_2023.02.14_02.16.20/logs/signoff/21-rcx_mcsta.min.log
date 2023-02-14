@@ -1,0 +1,499 @@
+OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.17    0.07    2.07 v osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.17    0.00    2.07 v input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.55    0.55    2.63 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.55    0.00    2.63 v _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.45    1.33    3.96 v _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.45    0.00    3.97 v osc_out (out)
+                                  3.97   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -3.97   data arrival time
+-----------------------------------------------------------------------------
+                                  5.72   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.10    0.04    2.04 v osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.10    0.00    2.04 v input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.31    0.31    2.36 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.31    0.00    2.36 v _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.87    0.77    3.13 v _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.87    0.00    3.13 v osc_out (out)
+                                  3.13   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -3.13   data arrival time
+-----------------------------------------------------------------------------
+                                  4.88   slack (MET)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.07    0.03    2.03 v osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.07    0.00    2.03 v input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.20    0.20    2.23 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.20    0.00    2.23 v _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.58    0.50    2.74 v _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.58    0.00    2.74 v osc_out (out)
+                                  2.74   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.74   data arrival time
+-----------------------------------------------------------------------------
+                                  4.49   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.30    0.13    2.13 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.30    0.00    2.13 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.58    0.64    2.77 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.58    0.00    2.77 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  2.47    1.99    4.77 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  2.47    0.01    4.77 ^ osc_out (out)
+                                  4.77   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -4.77   data arrival time
+-----------------------------------------------------------------------------
+                                  2.98   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.17    0.08    2.08 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.17    0.00    2.08 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.34    0.36    2.44 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.34    0.00    2.44 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.45    1.14    3.58 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.45    0.01    3.59 ^ osc_out (out)
+                                  3.59   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.59   data arrival time
+-----------------------------------------------------------------------------
+                                  4.16   slack (MET)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.11    0.05    2.05 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.11    0.00    2.05 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.22    0.23    2.29 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.22    0.00    2.29 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.96    0.75    3.04 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.96    0.01    3.04 ^ osc_out (out)
+                                  3.04   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.04   data arrival time
+-----------------------------------------------------------------------------
+                                  4.71   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.30    0.13    2.13 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.30    0.00    2.13 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.58    0.64    2.77 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.58    0.00    2.77 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  2.47    1.99    4.77 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  2.47    0.01    4.77 ^ osc_out (out)
+                                  4.77   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -4.77   data arrival time
+-----------------------------------------------------------------------------
+                                  2.98   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.17    0.08    2.08 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.17    0.00    2.08 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.34    0.36    2.44 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.34    0.00    2.44 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.45    1.14    3.58 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.45    0.01    3.59 ^ osc_out (out)
+                                  3.59   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.59   data arrival time
+-----------------------------------------------------------------------------
+                                  4.16   slack (MET)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.11    0.05    2.05 ^ osc_en (in)
+     2    0.01                           osc_en (net)
+                  0.11    0.00    2.05 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.22    0.23    2.29 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     2    0.02                           net1 (net)
+                  0.22    0.00    2.29 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.96    0.75    3.04 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.96    0.01    3.04 ^ osc_out (out)
+                                  3.04   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.04   data arrival time
+-----------------------------------------------------------------------------
+                                  4.71   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+check_report_end
+parastic_annotation_check
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+parastic_annotation_check_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+======================= Slowest Corner ===================================
+
+
+======================= Typical Corner ===================================
+
+
+======================= Fastest Corner ===================================
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 2.98
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 4.49
+worst_slack_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+
+
+======================= Slowest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.31e-06   9.23e-06   5.50e-07   1.21e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.31e-06   9.23e-06   5.50e-07   1.21e-05 100.0%
+                          19.1%      76.3%       4.6%
+
+======================= Typical Corner ===================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.82e-06   1.14e-05   4.68e-08   1.42e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.82e-06   1.14e-05   4.68e-08   1.42e-05 100.0%
+                          19.8%      79.9%       0.3%
+
+
+======================= Fastest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          3.44e-06   1.38e-05   5.66e-08   1.72e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.44e-06   1.38e-05   5.66e-08   1.72e-05 100.0%
+                          20.0%      79.7%       0.3%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 3346 u^2 11% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF files for all corners...
+Writing SDF for the ff corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.ff.sdf...
+Writing SDF for the ss corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.ss.sdf...
+Writing SDF for the tt corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.tt.sdf...
+Writing timing models for all corners...
+Writing timing models for the ff corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.ff.lib...
+Writing timing models for the ss corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.ss.lib...
+Writing timing models for the tt corner to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/results/routing/mca/process_corner_min/top.tt.lib...

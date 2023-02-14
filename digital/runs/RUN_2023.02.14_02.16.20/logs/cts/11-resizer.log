@@ -1,0 +1,230 @@
+OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Net 'osc_out' matched don't touch regular expression, setting as don't touch...
+[INFO]: Setting RC values...
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             455.5 u
+legalized HPWL            465.0 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 2 instances
+[INFO DPL-0021] HPWL before             465.0 u
+[INFO DPL-0022] HPWL after              455.5 u
+[INFO DPL-0023] HPWL delta               -2.1 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.odb...
+Writing netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.nl.v...
+Writing powered netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.pnl.v...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.def...
+Writing timing constraints to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.sdc...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.09    0.04    2.04 v osc_en (in)
+     1    0.01                           osc_en (net)
+                  0.09    0.00    2.04 v input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.29    0.30    2.34 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     1    0.02                           net1 (net)
+                  0.29    0.00    2.34 v _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.88    0.77    3.11 v _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.88    0.00    3.11 v osc_out (out)
+                                  3.11   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -3.11   data arrival time
+-----------------------------------------------------------------------------
+                                  4.86   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.16    0.07    2.07 ^ osc_en (in)
+     1    0.01                           osc_en (net)
+                  0.16    0.00    2.07 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.31    0.34    2.41 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     1    0.02                           net1 (net)
+                  0.31    0.00    2.41 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.48    1.15    3.56 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.48    0.01    3.57 ^ osc_out (out)
+                                  3.57   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.57   data arrival time
+-----------------------------------------------------------------------------
+                                  4.18   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.16    0.07    2.07 ^ osc_en (in)
+     1    0.01                           osc_en (net)
+                  0.16    0.00    2.07 ^ input1/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                  0.31    0.34    2.41 ^ input1/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     1    0.02                           net1 (net)
+                  0.31    0.00    2.41 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.48    1.15    3.56 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.48    0.01    3.57 ^ osc_out (out)
+                                  3.57   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.57   data arrival time
+-----------------------------------------------------------------------------
+                                  4.18   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+parastic_annotation_check
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 4 unannotated drivers.
+ osc_en
+ _0_/Z
+ input1/Z
+ osc0/Y
+Found 0 partially unannotated drivers.
+parastic_annotation_check
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 4.18
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 4.86
+worst_slack_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.81e-06   1.12e-05   1.45e-08   1.40e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.81e-06   1.12e-05   1.45e-08   1.40e-05 100.0%
+                          20.0%      79.9%       0.1%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 3333 u^2 11% utilization.
+area_report_end
+Setting global connections for newly added cells...
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.odb...
+Writing netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.nl.v...
+Writing powered netlist to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.pnl.v...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.def...
+Writing timing constraints to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/cts/11-top.resized.sdc...

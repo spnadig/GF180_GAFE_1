@@ -1,0 +1,306 @@
+OpenROAD 6cafde346882876ede12f949e26ba481afd82c0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO]: Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: 1120 7840
+[INFO GPL-0004] CoreAreaLxLy: 13440 31360
+[INFO GPL-0005] CoreAreaUxUy: 386400 368480
+[INFO GPL-0006] NumInstances: 196
+[INFO GPL-0007] NumPlaceInstances: 1
+[INFO GPL-0008] NumFixedInstances: 174
+[INFO GPL-0009] NumDummyInstances: 21
+[INFO GPL-0010] NumNets: 3
+[INFO GPL-0011] NumPins: 6
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 400000 400000
+[INFO GPL-0014] CoreAreaLxLy: 13440 31360
+[INFO GPL-0015] CoreAreaUxUy: 386400 368480
+[INFO GPL-0016] CoreArea: 125732275200
+[INFO GPL-0017] NonPlaceInstsArea: 23014476800
+[INFO GPL-0018] PlaceInstsArea: 70246400
+[INFO GPL-0019] Util(%): 0.07
+[INFO GPL-0020] StdInstsArea: 70246400
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000000 HPWL: 1222650
+[InitialPlace]  Iter: 2 CG residual: 0.00000000 HPWL: 1041052
+[InitialPlace]  Iter: 3 CG residual: 0.00000000 HPWL: 1027308
+[InitialPlace]  Iter: 4 CG residual: 0.00000000 HPWL: 1025046
+[InitialPlace]  Iter: 5 CG residual: 0.00000000 HPWL: 1024990
+[INFO GPL-0031] FillerInit: NumGCells: 731
+[INFO GPL-0032] FillerInit: NumGNets: 3
+[INFO GPL-0033] FillerInit: NumGPins: 6
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 70246400
+[INFO GPL-0025] IdealBinArea: 140492800
+[INFO GPL-0026] IdealBinCnt: 894
+[INFO GPL-0027] TotalBinArea: 125732275200
+[INFO GPL-0028] BinCnt: 16 16
+[INFO GPL-0029] BinSize: 23310 21070
+[INFO GPL-0030] NumBins: 256
+[NesterovSolve] Iter: 1 overflow: 0.34713 HPWL: 843796
+[NesterovSolve] Snapshot saved at iter = 0
+[NesterovSolve] Iter: 10 overflow: 0.347432 HPWL: 843791
+[NesterovSolve] Iter: 20 overflow: 0.347432 HPWL: 843792
+[NesterovSolve] Iter: 30 overflow: 0.347432 HPWL: 843792
+[NesterovSolve] Iter: 40 overflow: 0.347398 HPWL: 843799
+[NesterovSolve] Iter: 50 overflow: 0.347431 HPWL: 843809
+[NesterovSolve] Iter: 60 overflow: 0.346123 HPWL: 843842
+[NesterovSolve] Iter: 70 overflow: 0.345553 HPWL: 843873
+[NesterovSolve] Iter: 80 overflow: 0.344713 HPWL: 843924
+[NesterovSolve] Iter: 90 overflow: 0.3428 HPWL: 843979
+[NesterovSolve] Iter: 100 overflow: 0.340653 HPWL: 844076
+[NesterovSolve] Iter: 110 overflow: 0.338572 HPWL: 844253
+[NesterovSolve] Iter: 120 overflow: 0.334646 HPWL: 844508
+[NesterovSolve] Iter: 130 overflow: 0.327968 HPWL: 844875
+[NesterovSolve] Iter: 140 overflow: 0.3178 HPWL: 845395
+[NesterovSolve] Iter: 150 overflow: 0.304141 HPWL: 846131
+[NesterovSolve] Iter: 160 overflow: 0.282764 HPWL: 847207
+[NesterovSolve] Iter: 170 overflow: 0.254642 HPWL: 848616
+[NesterovSolve] Iter: 180 overflow: 0.221587 HPWL: 850333
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 16800 16800
+[INFO GPL-0038] TileCnt: 23 23
+[INFO GPL-0039] numRoutingLayers: 5
+[INFO GPL-0040] NumTiles: 529
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.5
+[INFO GPL-0067] 1.0%RC: 0.5
+[INFO GPL-0068] 2.0%RC: 0.5
+[INFO GPL-0069] 5.0%RC: 0.5
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.5
+[NesterovSolve] Iter: 190 overflow: 0.185512 HPWL: 852169
+[NesterovSolve] Iter: 200 overflow: 0.154034 HPWL: 853648
+[NesterovSolve] Iter: 210 overflow: 0.147758 HPWL: 853957
+[NesterovSolve] Iter: 220 overflow: 0.175343 HPWL: 852415
+[NesterovSolve] Iter: 230 overflow: 0.199371 HPWL: 851064
+[NesterovSolve] Iter: 240 overflow: 0.14504 HPWL: 853524
+[NesterovSolve] Iter: 250 overflow: 0.157356 HPWL: 852720
+[NesterovSolve] Iter: 260 overflow: 0.169437 HPWL: 852115
+[NesterovSolve] Iter: 270 overflow: 0.177558 HPWL: 851608
+[NesterovSolve] Iter: 280 overflow: 0.186585 HPWL: 851183
+[NesterovSolve] Iter: 290 overflow: 0.19427 HPWL: 850661
+[NesterovSolve] Iter: 300 overflow: 0.197291 HPWL: 850373
+[NesterovSolve] Iter: 310 overflow: 0.208533 HPWL: 849768
+[NesterovSolve] Iter: 320 overflow: 0.206217 HPWL: 849847
+[NesterovSolve] Iter: 330 overflow: 0.206754 HPWL: 849726
+[NesterovSolve] Iter: 340 overflow: 0.212426 HPWL: 849338
+[NesterovSolve] Iter: 350 overflow: 0.19568 HPWL: 849817
+[NesterovSolve] Iter: 360 overflow: 0.189773 HPWL: 849754
+[NesterovSolve] Iter: 370 overflow: 0.308034 HPWL: 845058
+[NesterovSolve] Iter: 380 overflow: 0.332565 HPWL: 844225
+[NesterovSolve] Iter: 390 overflow: 0.326692 HPWL: 844428
+[NesterovSolve] Iter: 400 overflow: 0.319377 HPWL: 844637
+[NesterovSolve] Iter: 410 overflow: 0.308873 HPWL: 844976
+[NesterovSolve] Iter: 420 overflow: 0.28565 HPWL: 845690
+[NesterovSolve] Iter: 430 overflow: 0.273099 HPWL: 845921
+[NesterovSolve] Iter: 440 overflow: 0.251454 HPWL: 846911
+[NesterovSolve] Iter: 450 overflow: 0.206217 HPWL: 848079
+[NesterovSolve] Iter: 460 overflow: 0.174001 HPWL: 848458
+[NesterovSolve] Iter: 470 overflow: 0.160678 HPWL: 849020
+[NesterovSolve] Iter: 480 overflow: 0.104669 HPWL: 851441
+[NesterovSolve] Finished with Overflow: 0.099467
+Setting global connections for newly added cells...
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/placement/8-global.odb...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/placement/8-global.def...
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.22    0.11    2.11 v osc_en (in)
+     1    0.02                           osc_en (net)
+                  0.22    0.00    2.11 v _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  0.88    0.75    2.87 v _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  0.88    0.00    2.87 v osc_out (out)
+                                  2.87   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.87   data arrival time
+-----------------------------------------------------------------------------
+                                  4.62   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.37    0.20    2.20 ^ osc_en (in)
+     1    0.02                           osc_en (net)
+                  0.37    0.00    2.20 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.48    1.16    3.36 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.48    0.01    3.37 ^ osc_out (out)
+                                  3.37   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.37   data arrival time
+-----------------------------------------------------------------------------
+                                  4.38   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: osc_en (input port clocked by __VIRTUAL_CLK__)
+Endpoint: osc_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.37    0.20    2.20 ^ osc_en (in)
+     1    0.02                           osc_en (net)
+                  0.37    0.00    2.20 ^ _0_/A1 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                  1.48    1.16    3.36 ^ _0_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.07                           osc_out (net)
+                  1.48    0.01    3.37 ^ osc_out (out)
+                                  3.37   data arrival time
+
+                  0.00   10.00   10.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -3.37   data arrival time
+-----------------------------------------------------------------------------
+                                  4.38   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+parastic_annotation_check
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 3 unannotated drivers.
+ osc_en
+ _0_/Z
+ osc0/Y
+Found 0 partially unannotated drivers.
+parastic_annotation_check
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 4.38
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 4.62
+worst_slack_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          1.51e-06   9.11e-06   1.44e-08   1.06e-05 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.51e-06   9.11e-06   1.44e-08   1.06e-05 100.0%
+                          14.2%      85.6%       0.1%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 3320 u^2 11% utilization.
+area_report_end
+Setting global connections for newly added cells...
+Writing OpenROAD database to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/placement/8-global.odb...
+Writing layout to /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/digital/runs/RUN_2023.02.14_02.16.20/tmp/placement/8-global.def...
