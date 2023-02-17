@@ -1,0 +1,45 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1676577649
+<< error_p >>
+rect -66 0 -64 4000
+rect 0 0 2 4000
+<< nmos >>
+rect 88 0 288 4000
+<< ndiff >>
+rect 0 3973 88 4000
+rect 0 27 13 3973
+rect 59 27 88 3973
+rect 0 0 88 27
+rect 288 3973 376 4000
+rect 288 27 317 3973
+rect 363 27 376 3973
+rect 288 0 376 27
+<< ndiffc >>
+rect 13 27 59 3973
+rect 317 27 363 3973
+<< psubdiff >>
+rect -152 3973 -64 4000
+rect -152 27 -131 3973
+rect -85 27 -64 3973
+rect -152 0 -64 27
+<< psubdiffcont >>
+rect -131 27 -85 3973
+<< polysilicon >>
+rect 88 4000 288 4044
+rect 88 -44 288 0
+<< metal1 >>
+rect -152 3973 -64 4000
+rect -152 27 -131 3973
+rect -85 27 -64 3973
+rect -152 0 -64 27
+rect -2 3973 74 4002
+rect -2 27 13 3973
+rect 59 27 74 3973
+rect -2 -2 74 27
+rect 302 3973 378 4002
+rect 302 27 317 3973
+rect 363 27 378 3973
+rect 302 -2 378 27
+<< end >>

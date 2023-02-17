@@ -1,5 +1,9 @@
 * SPICE3 file created from top.ext - technology: gf180mcuC
 
+.subckt gf180mcu_fd_sc_mcu7t5v0__antenna VSS I VDD VNW VPW
+D0 VPW I diode_nd2ps_06v0 pj=1.86u area=0.2052p
+D1 I VNW diode_pd2nw_06v0 pj=1.86u area=0.2052p
+.ends
 
 .subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 VSS Z I VDD VNW VPW
 X0 Z a_36_113# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.803p ps=3.84u w=1.22u l=0.5u
@@ -31,16 +35,23 @@ C3 a_n3996_4046# GND 12.06fF
 .ends
 
 .subckt top VDD osc_out VSS osc_en
+XANTENNA__0__A1 VSS net1 VDD _0_/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA__0__A2 VSS osc_sig VDD _0_/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA_input1_I VSS osc_en VDD input1/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__antenna
 Xinput1 VSS net1 osc_en VDD input1/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
 X_0_ VDD VSS osc_out net1 osc_sig _0_/VNW VSUBS gf180mcu_fd_sc_mcu7t5v0__and2_1
 Xosc0 osc_sig osc0/VP VSUBS TopLevel_oscillator
 C0 VDD VSS 61.32fF
-C1 osc_out VSS 3.54fF
-C2 net1 VSS 4.22fF
+C1 net1 VSS 4.22fF
+C2 osc_out VSS 3.54fF
 C3 VSS VSUBS 188.76fF
 C4 VDD VSUBS 177.25fF
 C5 osc_sig VSUBS 31.49fF
 C6 osc0/VP VSUBS 5.07fF
+C7 osc0/a_1067_4019# VSUBS 11.97fF **FLOATING
+C8 osc0/a_n3996_4046# VSUBS 12.06fF **FLOATING
+C9 osc_out VSUBS -7.85fF
+C10 net1 VSUBS -9.92fF
 C11 _0_/VNW VSUBS 3.40fF
 .ends
 
