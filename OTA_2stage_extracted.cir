@@ -1,23 +1,22 @@
-* Extracted by KLayout with GF180 LVS runset on : 16/02/2023 19:35
+* Extracted by KLayout with GF180 LVS runset on : 17/02/2023 20:34
 
-.SUBCKT OTA_2stage vbias_tail vin2 vin1 vp gf180mcu_gnd
+.SUBCKT OTA_2stage vss vout vin2 vin1 vdd vp gf180mcu_gnd
 R$1 \$13 \$107 gf180mcu_gnd 220.125786164 ppolyf_u L=25U W=39.75U
-M$2 \$1 vbias_tail vbias_tail gf180mcu_gnd nfet_03v3 L=1U W=20U AS=8.8P AD=8.8P
-+ PS=40.88U PD=40.88U
-M$3 \$1 vbias_tail \$14 gf180mcu_gnd nfet_03v3 L=1U W=3600U AS=946.8P AD=946.8P
+M$2 vss \$3 \$3 gf180mcu_gnd nfet_03v3 L=1U W=20U AS=8.8P AD=8.8P PS=40.88U
++ PD=40.88U
+M$3 vss \$3 \$14 gf180mcu_gnd nfet_03v3 L=1U W=3600U AS=946.8P AD=946.8P
 + PS=3691.56U PD=3691.56U
-M$63 \$1 vbias_tail \$2 gf180mcu_gnd nfet_03v3 L=1U W=70000U AS=18326P
-+ AD=18326P PS=71066.52U PD=71066.52U
+M$63 vss \$3 vout gf180mcu_gnd nfet_03v3 L=1U W=70000U AS=18326P AD=18326P
++ PS=71066.52U PD=71066.52U
 M$763 \$14 vin2 \$13 gf180mcu_gnd nfet_03v3 L=1U W=180000U AS=47124P AD=47124P
 + PS=182742.48U PD=182742.48U
 M$863 \$14 vin1 \$59 gf180mcu_gnd nfet_03v3 L=1U W=180000U AS=47124P AD=47124P
 + PS=182742.48U PD=182742.48U
-M$4363 \$104 \$13 \$2 \$104 pfet_03v3 L=0.7U W=40000U AS=10472P AD=10472P
+M$4363 vdd \$13 vout vdd pfet_03v3 L=0.7U W=40000U AS=10472P AD=10472P
 + PS=40609.44U PD=40609.44U
-M$4763 \$104 \$59 \$13 \$104 pfet_03v3 L=2U W=2500U AS=659P AD=659P PS=2576.36U
+M$4763 vdd \$59 \$13 vdd pfet_03v3 L=2U W=2500U AS=659P AD=659P PS=2576.36U
 + PD=2576.36U
-M$4813 \$104 \$59 \$59 \$104 pfet_03v3 L=2U W=2500U AS=659P AD=659P PS=2576.36U
+M$4813 vdd \$59 \$59 vdd pfet_03v3 L=2U W=2500U AS=659P AD=659P PS=2576.36U
 + PD=2576.36U
-M$4863 \$104 vp vbias_tail \$104 pfet_03v3 L=2U W=10U AS=4.4P AD=4.4P PS=20.88U
-+ PD=20.88U
+M$4863 vdd vp \$3 vdd pfet_03v3 L=2U W=10U AS=4.4P AD=4.4P PS=20.88U PD=20.88U
 .ENDS OTA_2stage
