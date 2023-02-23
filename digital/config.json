@@ -3,15 +3,15 @@
   "VERILOG_FILES": "dir::top.v",
   "VERILOG_FILES_BLACKBOX": [
     "dir::../TopLevel_oscillator.v",
-    "dir::../OTA_2stage.v"
+    "dir::../OTA_2stage_macro.v"
   ],
   "EXTRA_LEFS": [
     "dir::../TopLevel_oscillator.lef",
-    "dir::../OTA_2stage.lef"
+    "dir::../OTA_2stage_macro.lef"
   ],
   "EXTRA_GDS_FILES": [
     "dir::../TopLevel_oscillator.gds",
-    "dir::../OTA_2stage.gds"
+    "dir::../OTA_2stage_macro.gds"
   ],
   "CLOCK_TREE_SYNTH": false,
   "CLOCK_PORT": null,
