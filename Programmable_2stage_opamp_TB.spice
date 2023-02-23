@@ -218,7 +218,7 @@ print @v5[dc]
 
 save all
 
-let ic = @m.xm5.m0[id] + @m.xm6.m0[id] + @m.xm9.m0[id]
+let ic = @m.xm5.m0[id] + @m.xm6.m0[id] + @m.xm8.m0[id]
 
 let power[cnt] = 3.3*ic
 

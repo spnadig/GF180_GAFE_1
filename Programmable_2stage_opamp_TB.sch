@@ -10,8 +10,11 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 "}
-C {devices/code_shown.sym} 0 35 0 0 {name=SPICE only_toplevel=false value=".include /usr/local/google/home/sachinnadig/MixedSignal_ENV/GF180_GAFE_1/OTA_2stage.spice
+C {devices/code_shown.sym} 0 35 0 0 {name=SPICE only_toplevel=false value=".include /usr/local/google/home/sachinnadig/MixedSignal_ENV_head/GF180_GAFE_1/OTA_2stage_extracted.spice
 
 *****Testbench for Programmable_2stage_opamp
 
@@ -222,7 +225,7 @@ print @v5[dc]
 
 save all
 
-let ic = @m.xm5.m0[id] + @m.xm6.m0[id] + @m.xm9.m0[id]
+let ic = @m.xm5.m0[id] + @m.xm6.m0[id] + @m.xm8.m0[id]*7
 
 let power[cnt] = 3.3*ic
 
