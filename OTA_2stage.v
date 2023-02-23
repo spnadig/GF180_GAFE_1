@@ -5,6 +5,6 @@ module OTA_2stage (
     output vout,
     input vin1,
     input vin2,
-    inout vp
+    input vp
 );
 endmodule // OTA_2stage
