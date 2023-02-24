@@ -4,9 +4,5 @@ module OTA_2stage_macro (
     inout vdd,
     inout vss,
 `endif
-    output vout,
-    input vin1,
-    input vin2,
-    input vp
 );
 endmodule // OTA_2stage
