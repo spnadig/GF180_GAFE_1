@@ -1,9 +1,9 @@
-gds read OTA_2stage.gds
-load OTA_2stage
+gds read OTA_2stage_macro.gds
+load OTA_2stage_macro
 
 # save with 0.001 unit
-cellname rename OTA_2stage_macro
-gds write OTA_2stage_macro.gds 
+#cellname rename OTA_2stage_macro
+#gds write OTA_2stage_macro.gds 
 
 box values 0 0 0 0
 

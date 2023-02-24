@@ -17,7 +17,7 @@
   "CLOCK_PORT": null,
   "DESIGN_IS_CORE": true,
   "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
-  "FP_PDN_MACRO_HOOKS": "amp1 VDD VSS vdd vss",
+  "FP_PDN_MACRO_HOOKS": "amp1 VDD VSS vdd vss, osc0 VDD VSS VP GND",
   "VDD_NETS": "VDD",
   "GND_NETS": "VSS",
   "FP_SIZING": "absolute",
