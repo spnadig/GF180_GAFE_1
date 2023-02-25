@@ -1,0 +1,30 @@
+{
+  "DESIGN_NAME": "top",
+  "VERILOG_FILES": "dir::top.v",
+  "VERILOG_FILES_BLACKBOX": [
+    "dir::../TopLevel_oscillator_macro.v",
+    "dir::../OTA_2stage_macro.v"
+  ],
+  "EXTRA_LEFS": [
+    "dir::../TopLevel_oscillator_macro.lef",
+    "dir::../OTA_2stage_macro.lef"
+  ],
+  "EXTRA_GDS_FILES": [
+    "dir::../TopLevel_oscillator_macro.gds",
+    "dir::../OTA_2stage_macro.gds"
+  ],
+  "CLOCK_TREE_SYNTH": false,
+  "CLOCK_PORT": null,
+  "DESIGN_IS_CORE": false,
+  "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
+  "FP_PDN_MACRO_HOOKS": "osc0 vdd vss VP GND",
+  "VDD_NETS": "vdd",
+  "GND_NETS": "vss",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 1500 1500",
+  "PL_TARGET_DENSITY": 0.70,
+  "RT_MAX_LAYER": "Metal4",
+  "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+  "SYNTH_BUFFERING": false,
+  "RSZ_DONT_TOUCH_RX": "osc_out"
+}
