@@ -2,29 +2,29 @@
   "DESIGN_NAME": "top",
   "VERILOG_FILES": "dir::top.v",
   "VERILOG_FILES_BLACKBOX": [
-    "dir::../TopLevel_oscillator.v",
+    "dir::../TopLevel_oscillator_macro.v",
     "dir::../OTA_2stage_macro.v"
   ],
   "EXTRA_LEFS": [
-    "dir::../TopLevel_oscillator.lef",
+    "dir::../TopLevel_oscillator_macro.lef",
     "dir::../OTA_2stage_macro.lef"
   ],
   "EXTRA_GDS_FILES": [
-    "dir::../TopLevel_oscillator.gds",
+    "dir::../TopLevel_oscillator_macro.gds",
     "dir::../OTA_2stage_macro.gds"
   ],
   "CLOCK_TREE_SYNTH": false,
   "CLOCK_PORT": null,
   "DESIGN_IS_CORE": true,
   "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
-  "FP_PDN_MACRO_HOOKS": "amp1 VDD VSS vdd vss, osc0 VDD VSS VP GND",
+  "FP_PDN_MACRO_HOOKS": "osc0 VDD VSS VP GND",
   "VDD_NETS": "VDD",
   "GND_NETS": "VSS",
   "FP_SIZING": "absolute",
-  "DIE_AREA": "0 0 3000 3000",
+  "DIE_AREA": "0 0 1500 1500",
   "PL_TARGET_DENSITY": 0.70,
   "RT_MAX_LAYER": "Metal4",
   "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
   "SYNTH_BUFFERING": false,
-  "RSZ_DONT_TOUCH_RX": "vout_opamp, vin1_opamp, vin2_opamp, vp_opamp"
+  "RSZ_DONT_TOUCH_RX": "osc_out"
 }
