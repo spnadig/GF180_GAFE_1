@@ -9,7 +9,7 @@ port GND class inout
 port GND use ground
 port Y class output
 port Y use signal
-port AND_OUT class out
+port AND_OUT class input
 port AND_OUT use signal
 port CLK_IN remove
 port ASIG5V remove
